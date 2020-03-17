@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>find-number</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter a number : "));
+        let x = [-3,5,1,2,3,10];
+        let b = false;
+        let index = 0 ;
+        for (let i = 0; i<x.length;i++) {
+            if (a == x[i]) {
+                b = true;
+                index = i;
+                break;
+            }
+        }
+        if (b){
+            alert("so  " + a + " nam o vi tri " + index + " trong day");
+        }else alert("day khong phai so trong day");
+    </script>
+</body>
+</html>

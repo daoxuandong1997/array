@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const number = window.prompt();
+    const str = number.toString();  // bien so thanh day
+    const result =[str[0]];        // vut so dau tien vao
+    for (let i = 1; i < str ;i++){
+        if (str[i-1] % 2 === 0 && str[i] % 2 === 0){
+            result.push('-',str[i]);
+        }
+        else{
+           result.push(str[i]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>
